@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+              android:layout_height="150dp"
+                android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView android:layout_width="159dp"
+                                       android:layout_height="140dp" android:layout_marginLeft="10dp"
+                                       android:layout_marginRight="10dp" android:layout_marginTop="9dp"
+                                       app:cardMaxElevation="5dp" app:cardCornerRadius="5dp">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        </LinearLayout>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" app:srcCompat="@drawable/burger" android:id="@+id/foodimage"/>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="BURGER"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="39dp" android:id="@+id/foodname" android:layout_marginLeft="6dp"
+                android:layout_marginTop="5dp"/>
+        <TextView
+                android:text="RS. 50"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="46dp" android:id="@+id/price" android:layout_marginLeft="6dp"/>
+        <TextView
+                android:text="With Cold drink and franchfries"
+                android:textSize="14sp"
+                android:textColor="#FF3D00"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="42dp" android:id="@+id/desc" android:layout_marginLeft="6dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/burger" android:id="@+id/orderimage"
+            />
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_marginLeft="5dp">
+                <TextView
+                        android:text="BURGER"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp" android:id="@+id/ordername" android:textColor="#000000"
+                        android:textStyle="bold" android:textSize="20dp" android:layout_marginTop="10dp"/>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="39dp">
+                    <TextView
+                            android:text="ORDER NO :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" android:id="@+id/textView11"
+                            android:padding="1dp" android:textColor="#0B0B0B"
+                            android:textStyle="bold" android:textSize="16sp"/>
+                    <TextView
+                            android:layout_width="153dp"
+                            android:layout_height="39dp" android:id="@+id/orderno"
+                            android:textColor="#070707" android:textColorHint="#090909" android:textStyle="bold"
+                            android:textSize="16sp" android:text="01"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="PRICE"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView14"
+                            android:textColor="#070707" android:textSize="16sp" android:padding="1dp"/>
+                    <TextView
+                            android:text="Rs. 50"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#FF0000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/orderprice"
+                    />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
